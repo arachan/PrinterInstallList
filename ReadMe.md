@@ -5,6 +5,11 @@ PrinterPlace.csvとDriverList.csvから必要なドライバーを抽出し、�
 
 使い方
 ---------------------
+
+main.ps1を実行させます。
+
+main.ps1の中身を簡単に説明すると下記のようになります。
+
 1. PrinterPlace.csvをImport-Csvで取り込む
 2. プリンターをインストールしたい支店(Branch)と部署(Section)で絞り込む
 3. DriverList.csvをImport-Csvで取り込む
@@ -12,6 +17,19 @@ PrinterPlace.csvとDriverList.csvから必要なドライバーを抽出し、�
 5. functionの中にあるadd-port.ps1,create-printe.ps1,install-driver.ps1を遠隔のWindowsマシンに読み込ませる。
 6. install-drivers.ps1,install-ports.ps1,install-printers.ps1を遠隔地のWindowsマシンで実行
 7. 遠隔地のWindowsでドライバーのインストール,ポートの作成,プリンターの作成が行われます。
+
+環境
+-----------------------
+PowerShellが使えるWindowsであれば先ずはOK。
+
+下記の環境で実行できました。
+
+- Windows7
+- Windows Server2008
+- Windows10
+
+PowerShell v2程度のCmdletしか使っていないので、PowerShell v2搭載されたWindowsXPでも動くかもしれない。
+
 
 何故作ったのか？
 -----------------------
