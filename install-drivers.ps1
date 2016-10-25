@@ -1,4 +1,5 @@
-﻿net use z: \\IPAddress\PrinterDriver
+﻿# Make Network Drive
+net use z: \\IPAddress\PrinterDriver password /user:administrator
 
 function install-drivers{
     Param(
