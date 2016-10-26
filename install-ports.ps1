@@ -6,9 +6,14 @@
     }
     Process{
         # Port追加
-        Add-Port -PortName $port.Name -HostAddress $port.Name
-        # Windows 8 over
-        # Add-PrinterPort -Name $port.Name -PrinterHostAddress $port.Name
+        Add-Port `
+          -PortName $port.Name `
+          -HostAddress $port.Name
+        <# Windows 8 over
+        Add-PrinterPort `
+          -Name $port.Name `
+          -PrinterHostAddress $port.Name
+        #>
     }
 }
 

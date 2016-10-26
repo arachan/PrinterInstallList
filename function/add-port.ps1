@@ -1,8 +1,8 @@
 ﻿function Add-Port{
     Param(
-        # PortName ポート名
+        # Printer Port Name ポート名
         [string]$PortName,
-        # HostAddress プリンターのIPアドレス
+        # Printer Host IP Address プリンターのIPアドレス
         [string]$HostAddress
     )
     Begin{
@@ -10,17 +10,17 @@
        $Port=$PortList.CreateInstance()
     }
     Process{
-        # Port名
+        # Port Name
         $Port.Name=$PortName
-        # RAWモード: 1 LPR: 2
+        # RAW mode: 1 LPR: 2
         $Port.Protocol=1
-        # PortのIPアドレス
+        # Printer IP Address
         $Port.HostAddress=$HostAddress
-        # Port番号 RAWモードなので9100   
+        # Port Number RAW　9100
         $Port.PortNumber='9100'
-        # SNMPをonにするかしないか  
+        # SNMPをonにするかしないか
         $Port.SnmpEnabled=$true
-        # PrinterPort追加
+        # Add PrinterPort
         $Port.Put()
     }
 }

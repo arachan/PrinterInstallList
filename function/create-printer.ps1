@@ -18,17 +18,17 @@
     }
 
     Process{
-        # プリンタードライバー
+        # Printer Driver プリンタードライバー
         $Printer.DriverName=$DriverName
-        # ポート名
-        $Printer.PortName=$PortName
-        # 場所の記述
+        # Port Name ポート名
+        $ Printer.PortName=$PortName
+        # Printer Location 場所の記述
         $Printer.Location=$Location
-        # コメント
+        # Comment コメント
         $Printer.Comment=$Comment
-        # ディバイス名
+        # Device Name ディバイス名
         $Printer.DeviceID=$Name
-        # プリンター登録
+        # Printer registration プリンター登録
         $Printer.Put()
     }
 }

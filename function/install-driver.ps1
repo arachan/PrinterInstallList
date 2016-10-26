@@ -17,18 +17,18 @@ function Install-Driver{
         $PrinterDriver=$PrinterDriverList.CreateInstance()
     }
     Process{
-        # プリンタードライバー名
+        # Printer Driver Name プリンタードライバー名
         $PrinterDriver.Name=$Name
-        # WIndows x64か Windows NT x86か
+        # WIndows x64 or Windows NT x86
         $PrinterDriver.SupportedPlatform=$SupportPlatform
-        # version 3 意味は win2k
+        # version 3  win2k over is version 3
         $PrinterDriver.Version=$Version
-        # ドライバーのフォルダ
+        # Driver Folder ドライバーのフォルダ
         $PrinterDriver.DriverPath=$DriverPath
-        # INFファイルのあるパス
+        # Inf File Path INFファイルのあるパス
         $PrinterDriver.InfName=$InfName
         $PrinterDriverList.AddPrinterDriver($PrinterDriver)
-        # Putするのに管理者権限が必要
+        # Need Admin Right Putするのに管理者権限が必要
         $PrinterDriverList.Put()
     }
 }
