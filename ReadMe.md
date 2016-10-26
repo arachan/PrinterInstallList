@@ -64,7 +64,9 @@ For more details, see the accompanying blog post:
     http://ramblingcookiemonster.github.io/Join-Object/
 
 For even more details, see the original code and discussions that this borrows from:
+
     Dave Wyatt's Join-Object - http://powershell.org/wp/forums/topic/merging-very-large-collections
+
     Lucio Silveira's Join-Object - http://blogs.msdn.com/b/powershell/archive/2012/07/13/join-object.aspx
 
 
