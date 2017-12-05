@@ -1,4 +1,36 @@
-Printer Install List
+Printer Install List (English)
+=====================
+
+It is tool install Remote Windows Machine PrinterDriver and Printer from PrinterPlace.csv and DriverList.csv.
+
+How to use
+---------------------
+
+run main.ps1
+
+main.ps1 is explain under.
+
+1. import PrinterPlace.csv by Import-Csv
+2. Pick up printer from Branch and Section
+3. import DriverList.csv by Import-Csv
+4. To use Join-Object inner join PrinterPlace and DriverList
+5. load add-port.ps1,create-printe.ps1,install-driver.ps1 to remote windows machine
+6. execute install-drivers.ps1,install-ports.ps1,install-printers.ps1 to remote machine.
+7. Install Driver and Make PrinterPort,Make Printer to Remote Machine.
+
+Environment
+-----------------------
+Windows to able to use Powershell anything use.
+
+I can run fine under enviroment.
+
+- Windows7
+- Windows Server2008
+- Windows10
+
+I use only Powershell v2 cmdlet,So, Maybe can run WindowsXP in PowerShell v2.
+
+Printer Install List(Japanese)
 =====================
 
 PrinterPlace.csvとDriverList.csvから必要なドライバーを抽出し、遠隔地のWindowsマシンにプリンタードライバーやプリンタをインストールするためのツール。
